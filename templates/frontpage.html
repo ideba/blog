@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Debby's Blog</title>
+	</head>
+	<body>
+		<h1><a href="/blog">Blog for All</a></h1>
+	</body>
+</html>
+
+<body>
+	{% for blog in blogs %}
+	<div class="blog">
+		<div class="title">{{blog.title}}</div>
+		<div class="entry">{{blog.entry}}</div>
+		<hr>
+	</div>
+	{% endfor %}
+</body>
